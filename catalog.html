@@ -10,17 +10,19 @@
       <div class="top-header">
         <div class="container">
           <div class="header-logo">
-            <a class="logo" href="#">Техномарк</a>
+            <a class="logo" href="#">Техномарт</a>
             <form class="search" action="#" method="post">
               <input type="search" name="search" id="search" placeholder="Поиск:">
-              <label for="search"></label>
+              <button class="search-icon" type="button">Поиск</button>
             </form>
             <a class="bookmark bookmark-icon" href="#">Закладки: 0</a>
             <a class="basket basket-icon-full" href="#">Корзина: 10</a>
             <a class="checkout" href="#">Оформить заказ</a>
           </div> 
           <div class="middle-header">
-            <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <p class="middle-header-title">
+              Интернет-магазин строительных материалов и инструментов для ремонта
+            </p>
             <div class="middle-header-contacts">
               <p class="contacts-phone phone-icon">+7 (812) 555-05-55</p>
               <p class="contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -29,11 +31,11 @@
               <li class="user">
                 <a href="#" class="user-link">Равшан Джамшутович</a>
               </li>
+              <button class="user-icon" type="submit">Выйти</button>
+            </ul>
+            <ul class="oder-block">
               <li class="my-order">
                 <a href="#" class="my-order-link">Мои заказы</a>
-              </li>
-              <li>
-                <span class="dopt"></span>
               </li>
               <li class="account">
                 <a href="#" class="account-link">Личный кабинет</a>
@@ -42,7 +44,7 @@
           </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li><a href="index.html">Главная</a></li>
+              <li><a>Главная</a></li>
               <li><a href="#company">Компания</a></li>
               <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#news">Новости</a></li>
@@ -54,8 +56,6 @@
         </div>
       </div>
     </header> 
-
-    <h1 class="visually-hidden">Каталог магазина Техномарт</h1>
 
     <main class="main-catalog">
       <ul class="bread-crumb">
@@ -72,11 +72,11 @@
           <a class="link product-link">Перфораторы</a>
         </li>
       </ul>
-      <h1>Перфораторы</h1>
+      <h1 class="title-catalog">Перфораторы</h1>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр продуктов</h2>
-        <form class="catalog-form" method="GET">
+        <form class="catalog-form" method="get">
           <fieldset class="filter-item">
             <!--Фильтр цены-->
           </fieldset>
@@ -262,7 +262,7 @@
       </div>
     </article>
 
-    <footer>
+    <footer class="main-footer">
       <div class="footer-top">
         <div class="container">
           <div class="footer-contacts">
@@ -310,7 +310,7 @@
             <a class="e-mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="design-copyright">Разработано -
-            <a class="designer" href="http://htmlacademy.ru/">htmlacademy.ru</a>
+            <a class="designer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
