@@ -7,9 +7,8 @@
   <body>
 
     <header class="main-header">
-      <div class="container">
         <div class="top-header">
-          <div class="header-logo">
+          <div class="header-logo container">
             <a class="logo">Техномарт</a>
             <form class="search" action="#" method="get">
               <input type="search" name="search" id="search" placeholder="Поиск:">
@@ -20,7 +19,7 @@
             <a class="checkout" href="#">Оформить заказ</a>
           </div> 
         </div>
-        <div class="middle-header">
+        <div class="middle-header container">
           <h1 class="middle-header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <div class="middle-header-contacts">
             <p class="contacts-phone phone-icon">+7 (812) 555-05-55</p>
@@ -31,7 +30,7 @@
             <li class="register"><a href="#">Регистрация</a></li>
           </ul>
         </div>
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
           <ul class="site-navigation">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Компания</a></li>
@@ -42,7 +41,6 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-      </div>
     </header> 
 
     <main>
@@ -78,47 +76,56 @@
         </section>
 
         <section class="popular-products">
-          <h2 class="visually-hidden">Популярные товары</h2>
           <div class="header-products">
             <h2>Популярные товары:</h2>
             <a class="btn" href="#">Все популярные товары</a>
           </div>
-          <div class="product-item">
-            <div class="image-item">
-              <img width="#" height="#" src="#" alt="Перфоратор BOSCH BFG 9000">
-            </div>
-            <h3 class="title">Перфоратор BOSCH BFG 9000</h3>
-            <div class="discount">32 500 Р.</div>
-            <div class="price">25 500 Р.</div>
-          </div>
-          <div class="product-item">
-            <div class="image-item">
-              <img width="#" height="#" src="#" alt="Перфоратор BOSCH BFG 3000">
-            </div>
-            <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
-            <div class="discount">22 500 Р.</div>
-            <div class="price">15 500 Р.</div>
-          </div>
-          <div class="product-item">
-            <div class="image-item">
-              <img width="#" height="#" src="#" alt="Перфоратор BOSCH BFG 6000">
-            </div>
-            <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
-            <div class="discount">30 500 Р.</div>
-            <div class="price">25 500 Р.</div>
-          </div>
-          <div class="product-item">
-            <div class="flag flag-new">новинка</div>
-            <div class="image-item">
-              <img width="#" height="#" src="#" alt="Перфоратор BOSCH BFG 2000">
-            </div>
-            <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
-            <div class="price">12 500 Р.</div>
+          <div class="catalog-items">
+            <article class="catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
+              <div class="image"><img width="#" height="#" src="#"></div>
+              <h3 class="title">Перфоратор BOSCH BFG 9000</h3>
+              <div class="discount">32 500 Р.</div>
+              <div class="price">25 500 Р.</div>
+            </article>
+            <article class="catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
+              <div class="image"><img width="#" height="#" src="#"></div>
+              <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
+              <div class="discount">22 500 Р.</div>
+              <div class="price">15 500 Р.</div>
+            </article>
+            <article class="catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
+              <div class="image"><img width="#" height="#" src="#"></div>
+              <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
+              <div class="discount">30 500 Р.</div>
+              <div class="price">22 500 Р.</div>
+            </article>
+            <article class="catalog-item">
+              <div class="flag flag-new">новинка</div>
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
+              <div class="image"><img width="#" height="#" src="#"></div>
+              <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
+              <div class="discount"></div>
+              <div class="price">12 500 Р.</div>
+            </article>
           </div>
         </section>
 
         <section class="brands">
-          <h2 class="visually-hidden">Производители</h2>
           <div class="header-products">
             <h2>Популярные производители:</h2>
             <a class="btn" href="#">Все популярные товары</a>
@@ -153,7 +160,7 @@
 
         <section class="service">
           <div class="container">
-            <h2 class="visually-hidden">Сервисы</h2>
+            <h2>Сервисы</h2>
             <p class="service-intro"> Хороший интернет-магазин отличается от плохого не только ценами!
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
@@ -165,7 +172,7 @@
               </ul>
               <div class="service-slider-content">
                 <div class="service-slide slide-delivery">
-                  <h2>Доставка</h2>
+                  <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно!
                     Ведь мы неплохо заработаем,<br>
@@ -173,7 +180,7 @@
                   </p>
                 </div>
                 <div class="service-slide slide-guarantee">
-                  <h2>Гарантия</h2>
+                  <h3>Гарантия</h3>
                   <p>Если купленный у нас товар поломается или заискрит,<br>
                     а также в случае пожара, спровоцированного его возгаранием, 
                     вы всегда можете быть уверены в нашей гарантии. 
@@ -182,7 +189,7 @@
                   </p>
                 </div>
                 <div class="service-slide slide-credit">
-                  <h2>Кредит</h2>
+                  <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!<br>
                     Кредитные консультанты придут вам на помощь.
                   </p>
@@ -282,15 +289,15 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="user-block">
           <p>
-            <label for="name">Ваше имя:</label><br>
+            <label for="name">Ваше имя:</label>
             <input name="your-name" id="name" type="text" placeholder="Имя Фамилия"> 
           </p>
           <p>
-            <label for="email">Ваш e-mail:</label><br>
+            <label for="email">Ваш e-mail:</label>
             <input name="email" id="email" type="text" placeholder="email@example.com">
           </p>
         </div>
-        <label for="message">Текст письма:</label> <br>
+        <label for="message">Текст письма:</label> 
     	  <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
         <input type="submit" class="btn" value="Отправить">
       </form>
