@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff; 
+    text-transform: uppercase; 
+
+    background-color: #ee3643;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.main-header {
+    background-color: #f4f7f9;
+}
+
+.top-header {
+    background-color: #293449;
+}
+
+.search,
+.bookmarks,
+.basket {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.search-icon .icon,
+.bookmark-icon .icon,
+.basket-icon .icon {
+    fill: #ffffff;
+    opacity: 0.3;
+}
+
+.checkout {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #63a63e;
+}
+
+.middle-header-title {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.contacts-phone {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+}
+
+.contacts-adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c; 
+}
+
+.user-block {
+    list-style: none;
+}
+
+.login-icon .icon {
+    fill: #c5c5c5;
+}
+
+.login a,
+.register a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.main-navigation {
+    background-color: #32425c;
+    box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.cards {
+    font-size: 24px;
+    line-height: 30px; 
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cards-link {
+    width: 135px;
+
+    font-size: 14px;
+    line-height: 18px; 
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    opacity: 0.1;
+    background-color: #000000;
+}
+
+.materials .icon,
+.instruments .icon,
+.equipment .icon,
+.sales .icon,
+.delivery .icon {
+    fill: #ffffff;
+}
+
+.materials {
+    width: 300px;
+    
+    background-color: #ffbf47;
+}
+
+.instruments {
+    width: 300px;
+
+    background-color: #3bbce3;
+}
+
+.equipment {
+    width: 300px;
+    
+    background-color: #dc91d8;
+}
+
+.sales {
+    width: 300px;
+
+    background-color: #8ed78f;
+}
+
+.delivery {
+    width: 300px;
+
+    background-color: #ffc047;
+}
+
+.header-products {
+    background-color: #f9f5f0;
+}
+
+.header-products h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: PTSans;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.discount {
+    font-family: PTSans;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #a9a9a9;
+}
+
+.price {
+    font-family: PTSans;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-image: url("img/red-button.svg");
+}
+
+.buy {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #63a63e;
+    box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.bookmark {
+    font-size: 14px;
+    line-height: 18px;
+    color: #32425c;
+
+    border: 3px solid #63a63e;
+}
+
+.service {
+    background-color: #f4f7f9;
+}
+
+.service h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service-intro {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.service-control {
+    list-style: none;
+}
+
+.service-control li {
+    width: 240px;
+    
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #32425c;
+}
+
+.service-slide h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.service-slide p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about h2,
+.company-contacts h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.about p,
+.company-contacts p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.transport-company {
+    list-style: none;
+}
+
+.transport-company li {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.main-footer {
+    background-color: #32425c;
+}
+
+.address {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9;
+}
+
+.footer-site-menu,
+.footer-shop-menu,
+.social-button {
+    list-style: none;
+}
+
+.footer-site-menu a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9;    
+}
+
+.footer-shop-menu a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffd180;    
+}
+
+.footer-bottom {
+    background-color: #293449;
+}
+
+.copyright-company {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.btn-social {
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.btn-social .icon {
+    fill: #ffffff;
+}
+
+.feedback,
+.design-copyright {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.feedback a,
+.design-copyright a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffd180;
+}
+
+/* =====  PROMO SLIDER ==== */
+
+/* ===== == CATALOG == ==== */
+
+.basket-icon-full .icon {
+    fill: #ffffff;
+    opacity: 0.3; 
+}
+
+.basket-icon-full {
+    background-color: #ee3643;
+}
+
+.user-link .icon,
+.user-icon .icon {
+    fill: #c5c5c5;
+}
+
+.user-link span {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;    
+}
+
+.oder-block,
+.bread-crumb {
+    list-style: none;
+}
+
+.oder-block a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+}
+
+.bread-crumb a {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000; 
+    text-transform: uppercase;   
+}
+
+.title-catalog {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+
+    background-color: #f2f6f8;
+}
+
+.filters h2 {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f7f3ec;
+}
+
+.filters legend {
+    font-family: PTSans;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.catalog-form ul,
+.sort-types,
+.pagination-list {
+    list-style: none;
+} 
+
+.filter-option {
+    font-family: PTSans;
+    font-size: 15px;
+    line-height: 20px;  
+    text-transform: uppercase;  
+}
+
+.form-btn {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+.results {
+    background-color: #f7f3ec;
+}
+
+.results p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+
+    text-transform: uppercase;
+}
+
+.by-price  {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ee3643;
+}
+
+.by-type {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+
+    opacity: 0.3;
+    border-bottom: 1px #ee3643 dotted;
+}
+
+.by-functional {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+
+    opacity: 0.3;
+    border-bottom: 1px #ee3643 dotted;
+}
+
+.less-to-more .icon {
+    fill: #ee3643;
+}
+
+.more-to-less .icon {
+    fill: #c5c5c5;
+}
+
+.pagination-item {
+    border: 1px solid #e5e5e5;
+}
+
+.pagination-item a {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.active {
+    background-color: #ee3643;
+}
+
+.active a {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.description {
+    background-color: #f4f7f9;
+}
+
+.description h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.description p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/* ===== == MODAL WINDOW == ==== */
+
+.login-form label {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.login-form input,
+.login-form textarea {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+
+    border: 2px solid #dee3e4;
+}
+
+.login-form .btn {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* ===== == MODAL CATALOG == ==== */
+
+.modal-cocntent {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.continue-button {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+
+    background-color: #ffffff;
+}

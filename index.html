@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
 
@@ -34,7 +36,7 @@
       </symbol>
 
       <symbol id="icon-phone" viewBox="0 0 19 19">
-        <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
+          <path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
       </symbol>
 
       <symbol id="icon-login" viewBox="0 0 20 17">
@@ -65,7 +67,7 @@
       </symbol>
 
       <symbol id="icon-close" enable-background="new 0 0 21 21" viewBox="0 0 21 21">
-        <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/>
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
       </symbol>
     </svg>
 
@@ -84,7 +86,7 @@
                 </svg>
               </button> 
             </form>
-            <a class="bookmark bookmark-icon" href="#">
+            <a class="bookmarks bookmark-icon" href="#">
               <svg class="icon" width="14" height="16">
                 <use xlink:href="#icon-bookmark"/>
               </svg>
@@ -140,15 +142,15 @@
           <div class="column1">
             <div class="materials materials-icon">
               <div class="flag flag-new">новинка</div>
-              <h3>Материалы</h3>
-              <a href="#">На любой вкус</a>
+              <h3 class="cards">Материалы</h3>
+              <a class="cards-link" href="#">На любой вкус</a>
               <svg class="icon" width="44" height="65">
                 <use xlink:href="#icon-1"/>
               </svg>
             </div>
             <div class="instruments instruments-icon">
-              <h3>Инструмент</h3>
-              <a href="#">На все случаи</a>
+              <h3 class="cards">Инструмент</h3>
+              <a class="cards-link" href="#">На все случаи</a>
               <svg class="icon" width="75" height="61">
                 <use xlink:href="#icon-2"/>
               </svg>
@@ -157,22 +159,22 @@
           </div>
           <div class="column2">
             <div class="equipment equipment-icon">
-              <h3>Техника</h3>
-              <a href="#">Для стройки</a>
+              <h3 class="cards">Техника</h3>
+              <a class="cards-link" href="#">Для стройки</a>
               <svg class="icon" width="78" height="62">
                 <use xlink:href="#icon-3"/>
               </svg>
             </div>
             <div class="sales sales-icon">
-              <h3>Скидки 50%</h3>
-              <a href="#">На 350 товаров</a>
+              <h3 class="cards">Скидки 50%</h3>
+              <a class="cards-link" href="#">На 350 товаров</a>
               <svg class="icon" width="59" height="72">
                 <use xlink:href="#icon-4"/>
               </svg>
             </div>
             <div class="delivery delivery-icon">
-              <h3>Доставка</h3>
-              <a href="#">Бесплатно</a>
+              <h3 class="cards">Доставка</h3>
+              <a class="cards-link" href="#">Бесплатно</a>
               <svg class="icon" width="78" height="63">
                 <use xlink:href="#icon-5"/>
               </svg>
