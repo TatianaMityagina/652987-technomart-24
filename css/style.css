@@ -67,8 +67,6 @@ a {
 }
 
 .search input:focus {
-    color: #000000;
-
     background-color: #ffffff;
     border: none;
 }
@@ -107,10 +105,6 @@ a {
 
     background-color: #161d29;
     opacity: 0.6;
-}
-
-.search-icon:focus .icon {
-    fill: #ee3643;
 }
 
 .checkout {
@@ -594,7 +588,7 @@ a {
 }
 
 
-.user-link span {
+.user-link a {
     font-size: 21px;
     line-height: 21px;
     color: #000000;    
