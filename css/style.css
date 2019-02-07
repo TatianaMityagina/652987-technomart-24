@@ -588,7 +588,7 @@ a {
 }
 
 
-.user-link a {
+.user a {
     font-size: 21px;
     line-height: 21px;
     color: #000000;    
@@ -606,6 +606,8 @@ a {
 
     border-bottom: 2px solid #32425c;
 }
+
+
 
 .oder-block a:hover {
     color: #ee3643;
