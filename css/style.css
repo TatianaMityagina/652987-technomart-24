@@ -152,19 +152,21 @@ a {
     color: #000000;
 }
 
-.user-block:hover .icon {
+.user-link:hover .icon,
+.login:hover .icon {
     fill: #32425c;
 }
 
-.user-block:hover a {
+.user-block a:hover {
     color: #ee3643;
 }
 
-.user-block:active .icon {
+.user-link:active .icon,
+.login:active .icon {
     fill: #c5c5c5;
 }
 
-.user-block:active a {
+.user-block a:active {
     color: #000000;
 
     opacity: 0.3;
@@ -587,8 +589,9 @@ a {
     fill: #c5c5c5;
 }
 
-.user .user-link:hover,
-.user-icon a:hover {
+
+.user:hover .icon,
+.user-icon:hover .icon {
     fill: #32425c;
 }
 
