@@ -28,7 +28,14 @@ a {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-header {
@@ -37,6 +44,21 @@ a {
 
 .top-header {
     background-color: #293449;
+}
+
+.logo {
+    background-color: #ee3643;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo:hover {
+    background-color: #ca2c37;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo:active {
+    background-color: #ba2732;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .search,
@@ -54,12 +76,46 @@ a {
     opacity: 0.3;
 }
 
+.search:hover,
+.bookmark-icon:hover,
+.basket-icon:hover {
+    fill: #ffffff;
+    background-color: #212a3a;
+}
+
+.bookmark-icon:active,
+.basket-icon:active {
+    color: #ffffff;
+    fill: #ffffff;
+
+    background-color: #161d29;
+    opacity: 0.6;
+}
+
+.search-icon:focus {
+    color: #000000;
+    fill: #ee3643;
+
+    background-color: #ffffff;
+}
+
 .checkout {
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
 
     background-color: #63a63e;
+}
+
+.checkout:hover {
+    background-color: #5fbb2d;
+}
+
+.checkout:active {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: #518534;
+    opacity: 0.5;
 }
 
 .middle-header-title {
@@ -96,6 +152,24 @@ a {
     color: #000000;
 }
 
+.user-block:hover .icon {
+    fill: #32425c;
+}
+
+.user-block:hover a {
+    color: #ee3643;
+}
+
+.user-block:active .icon {
+    fill: #c5c5c5;
+}
+
+.user-block:active a {
+    color: #000000;
+
+    opacity: 0.3;
+}
+
 .main-navigation {
     background-color: #32425c;
     box-shadow: inset 0px -5px 0 0 #293449;
@@ -103,6 +177,17 @@ a {
 
 .site-navigation {
     list-style: none;
+}
+
+.site-navigation li:hover {
+    background-color: #293449;
+}
+
+.site-navigation li:active {
+    color: #ffffff;
+
+    background-color: #1d2739;
+    opacity: 0.5;
 }
 
 .site-navigation a {
@@ -127,6 +212,17 @@ a {
     text-transform: uppercase;
     
     opacity: 0.1;
+    background-color: #000000;
+}
+
+.cards-link:hover,
+.cards-link:focus {
+    opacity: 0.2;
+    background-color: #000000;
+}
+
+.cards-link:active {
+    opacity: 0.3;
     background-color: #000000;
 }
 
@@ -180,7 +276,7 @@ a {
 }
 
 .title {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -188,7 +284,7 @@ a {
 }
 
 .discount {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
@@ -197,7 +293,7 @@ a {
 }
 
 .price {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
@@ -215,12 +311,58 @@ a {
     box-shadow: inset 0px -3px 0 0 #367315;
 }
 
+.buy .icon {
+    fill: #ffffff;
+
+    opacity: 0.3;
+}
+
+.buy:hover .icon {
+    fill: #ffffff;
+
+    opacity: 1;
+}
+
+.actions:hover .buy {
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #5fbb2d;
+}
+
+.buy:active .icon {
+    fill: #ffffff;
+
+    opacity: 1;
+}
+
+.actions:active .buy {
+    background-color: #518534;
+}
+
 .bookmark {
     font-size: 14px;
     line-height: 18px;
     color: #32425c;
 
     border: 3px solid #63a63e;
+}
+
+.bookmark:hover {
+    border: 3px solid #32425c;
+}
+
+.bookmark:active {
+    color: #32425c;
+
+    opacity: 0.3;
+    border: 3px solid #32425c;
+}
+
+.brands-list:hover a {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands-list:active a{ 
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .service {
@@ -234,7 +376,7 @@ a {
 }
 
 .service-intro {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -254,6 +396,18 @@ a {
     background-color: #32425c;
 }
 
+.service-control li:hover  {
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    background-color: #293449;
+}
+
+.service-control li:active  {
+    color: #32425c;
+
+    box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+    background-color: #ffffff;
+}
+
 .service-slide h3 {
     font-size: 36px;
     line-height: 36px;
@@ -261,7 +415,7 @@ a {
 }
 
 .service-slide p {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -274,7 +428,7 @@ a {
 
 .about p,
 .company-contacts p {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -310,10 +464,32 @@ a {
     color: #f3f7f9;    
 }
 
+.footer-site-menu a:hover {
+    border-bottom: 2px solid #f1f5f7;
+}
+
+.footer-site-menu a:active {
+    color: #f3f7f9;
+
+    border: none;
+    opacity: 0.5;
+}
+
 .footer-shop-menu a {
     font-size: 18px;
     line-height: 24px;
     color: #ffd180;    
+}
+
+.footer-shop-menu a:hover {
+    border-bottom: 2px solid #ffd180;    
+}
+
+.footer-shop-menu a:active {
+    color: #ffd180;
+
+    border: none;
+    opacity: 0.5;  
 }
 
 .footer-bottom {
@@ -329,6 +505,11 @@ a {
 .btn-social {
     background-color: #212a3a;
     border-radius: 50%;
+}
+
+.btn-social:hover,
+.btn-social:active {
+    background-color: #ee3643;
 }
 
 .btn-social .icon {
@@ -349,7 +530,46 @@ a {
     color: #ffd180;
 }
 
+.feedback a:hover,
+.design-copyright a:hover {
+    border-bottom: 2px solid #ffd180;
+}
+
+.feedback a:active,
+.design-copyright a:active{
+    color: #ee3643;
+
+    border: none;
+}
+
 /* =====  PROMO SLIDER ==== */
+
+.slider-list {
+    list-style: none;
+}
+
+.slider-item h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.slider-item p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.slider-item-button:hover {
+    background-color: #ca2c37;
+}
+
+.slider-item-button:active {
+    background-color: #ba2732;
+}
 
 /* ===== == CATALOG == ==== */
 
@@ -367,6 +587,17 @@ a {
     fill: #c5c5c5;
 }
 
+.user .user-link:hover,
+.user-icon a:hover {
+    fill: #32425c;
+}
+
+.user .user-link:active,
+.user-icon a:active {
+    fill: #c5c5c5;
+}
+
+
 .user-link span {
     font-size: 21px;
     line-height: 21px;
@@ -382,10 +613,25 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
+
+    border-bottom: 2px solid #32425c;
+}
+
+.oder-block a:hover {
+    color: #ee3643;
+
+    border-bottom: 2px solid #ee3643;
+}
+
+.oder-block a:active {
+    color: #32425c;
+
+    opacity: 0.3;
+    border-bottom: 2px solid #32425c;
 }
 
 .bread-crumb a {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000; 
@@ -401,7 +647,7 @@ a {
 }
 
 .filters h2 {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -411,7 +657,7 @@ a {
 }
 
 .filters legend {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     line-height: 30px;
     font-weight: bold;
@@ -425,14 +671,14 @@ a {
 } 
 
 .filter-option {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;  
     text-transform: uppercase;  
 }
 
 .form-btn {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -446,7 +692,7 @@ a {
 }
 
 .results p {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -455,14 +701,14 @@ a {
 }
 
 .by-price  {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #ee3643;
 }
 
 .by-type {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -472,13 +718,31 @@ a {
 }
 
 .by-functional {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
 
     opacity: 0.3;
     border-bottom: 1px #ee3643 dotted;
+}
+
+.sort-types .by-price:hover,
+.sort-types .by-type:hover,
+.sort-types .by-functional:hover {
+    color: #000000;
+
+    border-bottom: 1px solid #ee3643;
+    opacity: 1;
+}
+
+.sort-types .by-price:active,
+.sort-types .by-type:active,
+.sort-types .by-functional:active {
+    color: #ee3643;
+
+    border: none;
+    opacity: 1;
 }
 
 .less-to-more .icon {
@@ -489,15 +753,33 @@ a {
     fill: #c5c5c5;
 }
 
+.less-to-more:hover .icon,
+.more-to-less:hover .icon {
+    fill: #000000;
+}
+
+.less-to-more:active .icon,
+.more-to-less:active .icon {
+    fill: #ee3643;
+}
+
 .pagination-item {
     border: 1px solid #e5e5e5;
 }
 
 .pagination-item a {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
+}
+
+.pagination-list li:hover  {
+    border: 1px solid #e5e5e5;
+}
+
+.pagination-list li:active {
+    border: 1px solid #ee3643;
 }
 
 .active {
@@ -505,7 +787,7 @@ a {
 }
 
 .active a {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #ffffff;
@@ -522,7 +804,7 @@ a {
 }
 
 .description p {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -536,12 +818,22 @@ a {
 
 .login-form input,
 .login-form textarea {
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
 
     border: 2px solid #dee3e4;
+}
+
+.login-form input:hover,
+.login-form textarea:hover {
+    border: 2px solid #b5b5b5;
+}
+
+.login-form input:focus,
+.login-form textarea:focus {
+    border: 2px solid #ee3643;
 }
 
 .login-form .btn {
