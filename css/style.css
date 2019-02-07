@@ -61,6 +61,18 @@ a {
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
+.search input {
+    background-color: #293449;
+    border: none;
+}
+
+.search input:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+    border: none;
+}
+
 .search,
 .bookmarks,
 .basket {
@@ -76,11 +88,16 @@ a {
     opacity: 0.3;
 }
 
-.search:hover,
+.search-icon:hover .icon,
+.bookmark-icon:hover .icon,
+.basket-icon:hover .icon {
+    opacity: 1;
+}
+
+.search-icon:hover,
 .bookmark-icon:hover,
-.basket-icon:hover {
-    fill: #ffffff;
-    background-color: #212a3a;
+.basket-icon:hover  {
+    background-color: #212a3a; 
 }
 
 .bookmark-icon:active,
@@ -92,11 +109,8 @@ a {
     opacity: 0.6;
 }
 
-.search-icon:focus {
-    color: #000000;
+.search-icon:focus .icon {
     fill: #ee3643;
-
-    background-color: #ffffff;
 }
 
 .checkout {
@@ -152,17 +166,16 @@ a {
     color: #000000;
 }
 
-.user-link:hover .icon,
-.login:hover .icon {
-    fill: #32425c;
-}
-
 .user-block a:hover {
     color: #ee3643;
 }
 
-.user-link:active .icon,
-.login:active .icon {
+.user-link .icon:hover {
+    fill: #32425c;
+}
+
+.user-link .icon:active,
+.login .icon:active {
     fill: #c5c5c5;
 }
 
@@ -181,21 +194,21 @@ a {
     list-style: none;
 }
 
-.site-navigation li:hover {
-    background-color: #293449;
-}
-
-.site-navigation li:active {
-    color: #ffffff;
-
-    background-color: #1d2739;
-    opacity: 0.5;
-}
-
 .site-navigation a {
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
+}
+
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
+.site-navigation a:active {
+    color: #ffffff;
+
+    background-color: #1d2739;
+    opacity: 0.5;
 }
 
 .cards {
@@ -226,14 +239,6 @@ a {
 .cards-link:active {
     opacity: 0.3;
     background-color: #000000;
-}
-
-.materials .icon,
-.instruments .icon,
-.equipment .icon,
-.sales .icon,
-.delivery .icon {
-    fill: #ffffff;
 }
 
 .materials {
@@ -313,18 +318,6 @@ a {
     box-shadow: inset 0px -3px 0 0 #367315;
 }
 
-.buy .icon {
-    fill: #ffffff;
-
-    opacity: 0.3;
-}
-
-.buy:hover .icon {
-    fill: #ffffff;
-
-    opacity: 1;
-}
-
 .actions:hover .buy {
     box-shadow: inset 0px -3px 0 0 #367315;
     background-color: #5fbb2d;
@@ -359,11 +352,11 @@ a {
     border: 3px solid #32425c;
 }
 
-.brands-list:hover a {
+.brands-list a:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.brands-list:active a{ 
+.brands-list a:active { 
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -653,6 +646,7 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
+    font-weight: 400s;
     color: #000000;
     text-transform: uppercase;
 
