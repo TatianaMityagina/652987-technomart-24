@@ -61,6 +61,11 @@ a {
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
+.search button {
+    background: none;
+    border: none;
+}
+
 .search input {
     background-color: #293449;
     border: none;
@@ -69,6 +74,10 @@ a {
 .search input:focus {
     background-color: #ffffff;
     border: none;
+}
+
+.search-icon:focus .icon {
+    fill: #ee3643;
 }
 
 .search,
@@ -88,7 +97,8 @@ a {
 
 .search-icon:hover .icon,
 .bookmark-icon:hover .icon,
-.basket-icon:hover .icon {
+.basket-icon:hover .icon,
+.basket-icon-full:hover .icon {
     opacity: 1;
 }
 
@@ -100,11 +110,15 @@ a {
 
 .bookmark-icon:active,
 .basket-icon:active {
-    color: #ffffff;
-    fill: #ffffff;
+    color: rgba(255, 255, 255, 0.6);
 
     background-color: #161d29;
-    opacity: 0.6;
+}
+
+.search-icon:active .icon,
+.bookmark-icon:active .icon,
+.basket-icon:active .icon {
+    opacity: 0.5;
 }
 
 .checkout {
@@ -122,8 +136,7 @@ a {
 .checkout:active {
     color: rgba(255, 255, 255, 0.5);
 
-    background-color: #518534;
-    opacity: 0.5;
+    background-color: rgb(81, 133, 52);
 }
 
 .middle-header-title {
@@ -172,9 +185,7 @@ a {
 }
 
 .user-link:active {
-    color: #000000;
-
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation {
@@ -197,10 +208,9 @@ a {
 }
 
 .site-navigation a:active {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.5);
 
     background-color: #1d2739;
-    opacity: 0.5;
 }
 
 .cards {
@@ -565,6 +575,14 @@ a {
 
 .basket-icon-full {
     background-color: #ee3643;
+}
+
+.basket-icon-full:hover {
+    background-color: rgb(202, 44, 55);
+}
+
+.basket-icon-full:active {
+    background-color: rgb(186, 39, 50);
 }
 
 .user-link .icon {
