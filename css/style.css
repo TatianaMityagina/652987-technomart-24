@@ -167,7 +167,7 @@ a {
     fill: #32425c;
 }
 
-.user-link .icon:active {
+.user-link:active .icon {
     fill: #c5c5c5;
 }
 
