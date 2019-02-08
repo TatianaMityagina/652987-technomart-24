@@ -593,8 +593,12 @@ a {
     fill: #c5c5c5;
 }
 
-.link-catalog:hover {
+.user-link-auth:hover {
     color: #000000;
+}
+
+.user-link-auth:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .oder-block,
