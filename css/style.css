@@ -153,27 +153,25 @@ a {
     fill: #c5c5c5;
 }
 
-.login a,
-.register a {
+.user-link {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
 }
 
-.user-block a:hover {
+.user-link:hover {
     color: #ee3643;
 }
 
-.user-link .icon:hover {
+.user-link:hover .icon {
     fill: #32425c;
 }
 
-.user-link .icon:active,
-.login .icon:active {
+.user-link .icon:active {
     fill: #c5c5c5;
 }
 
-.user-block a:active {
+.user-link:active {
     color: #000000;
 
     opacity: 0.3;
@@ -220,19 +218,16 @@ a {
     color: #ffffff;
     text-transform: uppercase;
     
-    opacity: 0.1;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .cards-link:hover,
 .cards-link:focus {
-    opacity: 0.2;
-    background-color: #000000;
+    background-color:rgba(0, 0, 0, 0.2);
 }
 
 .cards-link:active {
-    opacity: 0.3;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .materials {
@@ -300,7 +295,8 @@ a {
     font-weight: bold;
     color: #ffffff;
 
-    background-image: url("img/red-button.svg");
+    background-image: url("../img/red-button.svg");
+    background-repeat: no-repeat;
 }
 
 .buy {
@@ -312,7 +308,7 @@ a {
     box-shadow: inset 0px -3px 0 0 #367315;
 }
 
-.actions:hover .buy {
+.buy:hover  {
     box-shadow: inset 0px -3px 0 0 #367315;
     background-color: #5fbb2d;
 }
@@ -323,7 +319,7 @@ a {
     opacity: 1;
 }
 
-.actions:active .buy {
+.buy:active {
     background-color: #518534;
 }
 
@@ -454,7 +450,7 @@ a {
 }
 
 .footer-site-menu a:hover {
-    border-bottom: 2px solid #f1f5f7;
+    text-decoration: underline;
 }
 
 .footer-site-menu a:active {
@@ -471,7 +467,7 @@ a {
 }
 
 .footer-shop-menu a:hover {
-    border-bottom: 2px solid #ffd180;    
+    text-decoration: underline;  
 }
 
 .footer-shop-menu a:active {
@@ -521,7 +517,7 @@ a {
 
 .feedback a:hover,
 .design-copyright a:hover {
-    border-bottom: 2px solid #ffd180;
+    text-decoration: underline;
 }
 
 .feedback a:active,
@@ -571,27 +567,16 @@ a {
     background-color: #ee3643;
 }
 
-.user-link .icon,
-.user-icon .icon {
+.user-link .icon {
     fill: #c5c5c5;
 }
 
-
-.user:hover .icon,
-.user-icon:hover .icon {
-    fill: #32425c;
-}
-
-.user .user-link:active,
-.user-icon a:active {
+.user-link:active {
     fill: #c5c5c5;
 }
 
-
-.user a {
-    font-size: 21px;
-    line-height: 21px;
-    color: #000000;    
+.link-catalog:hover {
+    color: #000000;
 }
 
 .oder-block,
@@ -604,22 +589,17 @@ a {
     line-height: 18px;
     color: #32425c;
 
-    border-bottom: 2px solid #32425c;
+    text-decoration: underline;
 }
-
-
 
 .oder-block a:hover {
     color: #ee3643;
-
-    border-bottom: 2px solid #ee3643;
 }
 
 .oder-block a:active {
     color: #32425c;
 
     opacity: 0.3;
-    border-bottom: 2px solid #32425c;
 }
 
 .bread-crumb a {
@@ -642,7 +622,7 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
-    font-weight: 400s;
+    font-weight: 400;
     color: #000000;
     text-transform: uppercase;
 
@@ -693,14 +673,17 @@ a {
     text-transform: uppercase;
 }
 
-.by-price  {
+.sort-types .current  {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #ee3643;
+
+    opacity: 1;
+    border: none;
 }
 
-.by-type {
+.sort {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -710,28 +693,14 @@ a {
     border-bottom: 1px #ee3643 dotted;
 }
 
-.by-functional {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #000000;
-
-    opacity: 0.3;
-    border-bottom: 1px #ee3643 dotted;
-}
-
-.sort-types .by-price:hover,
-.sort-types .by-type:hover,
-.sort-types .by-functional:hover {
+.sort:hover {
     color: #000000;
 
     border-bottom: 1px solid #ee3643;
     opacity: 1;
 }
 
-.sort-types .by-price:active,
-.sort-types .by-type:active,
-.sort-types .by-functional:active {
+.sort:active {
     color: #ee3643;
 
     border: none;
@@ -775,11 +744,11 @@ a {
     border: 1px solid #ee3643;
 }
 
-.active {
+.pagination-list .active {
     background-color: #ee3643;
 }
 
-.active a {
+.pagination-list .active a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
