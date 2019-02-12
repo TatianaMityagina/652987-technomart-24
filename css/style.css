@@ -818,14 +818,14 @@ a {
 
 .footer-site-menu {
     display: flex;
-    justify-content: row-reverse; 
+    justify-content: flex-end; 
     margin: 0;
     padding: 0;  
 }
 
 .footer-shop-menu {
     display: flex;
-    justify-content: row-reverse; 
+    justify-content: flex-end; 
     margin: 0;
     padding: 0;    
 }
@@ -845,7 +845,12 @@ a {
 }
 
 .footer-site-menu li {
-    margin: 0 0 0 60px;
+    margin: 38px 0 0 60px;
+    padding: 0; 
+}
+
+.footer-shop-menu li {
+    margin: 35px 0 0 60px;
     padding: 0; 
 }
 
