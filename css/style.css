@@ -47,9 +47,11 @@ a {
 
 .visually-hidden {
     position: absolute;
+
     width: 1px;
     height: 1px;
     margin: -1px;
+    
     border: 0;
     padding: 0;
     clip: rect(0 0 0 0);
@@ -217,10 +219,7 @@ a {
 }
 
 .contacts-phone {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 70px;
-    padding-right: 50px;
+    padding: 8px 50px 8px 70px;
 
     font-size: 21px;
     line-height: 21px;
@@ -254,10 +253,7 @@ a {
 
 .user-link {
     display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 22px;
-    padding-right: 25px; 
+    padding: 12px 25px 12px 22px; 
 
     font-size: 21px;
     line-height: 21px;
@@ -355,6 +351,7 @@ a {
 
     width: 60px;
     height: 60px;
+
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
@@ -413,9 +410,7 @@ a {
 .cards-link {
     display: inline-block;
     width: 135px;
-    margin: 0;
-    margin-left: 24px;
-    margin-bottom: 22px;
+    margin: 0 0 22px 24px;
     padding: 10px 0;
 
     font-size: 14px;
@@ -464,7 +459,6 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    
     padding: 0;
 }
 
@@ -482,11 +476,11 @@ a {
     border: 1px solid #eaeaea;
 }
 
-.catalog-item .actions{
+.catalog-item .actions {
     display:none;
 }
 
-.catalog-item:hover .actions{
+.catalog-item:hover .actions {
     display:block;
 }
 
@@ -509,13 +503,13 @@ a {
     position: absolute;
     top:0;
     left:0;
+    z-index: 10;
 
     width:218px;
     height: 164px;
     padding: 40px 0;
 
     background-color: #ffffff;
-    z-index: 10;
 }
 
 .catalog-item .image {
@@ -1100,7 +1094,7 @@ a {
 
 .account-link::before {
     position: absolute;
-    content: '';
+    content: " ";
     top: 8px;
     left: -20px;
 
@@ -1121,6 +1115,7 @@ a {
 
 .bread-crumb a {
     position: relative;
+
     margin: 0 41px 0 0;
     padding: 0;
 
@@ -1171,12 +1166,21 @@ a {
     padding: 0;
 }
 
-.filters fieldset {
-    margin: 0;
+.filters .filter-item {
+    padding: 0 0 26px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-form fieldset {
+    margin: 19px 0 25px 0;
     padding: 0;
   
     border: none;
-  }
+}
+
+.catalog-form fieldset:first-child {
+    margin: 0;
+}
 
 .results-catalog {
     width: 700px;
@@ -1228,6 +1232,7 @@ a {
     background-color: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
+
     cursor: pointer;
 }
 
@@ -1303,6 +1308,7 @@ a {
 .filter-option {
     margin: 0;
     padding: 0;
+    
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;  
@@ -1453,7 +1459,6 @@ a {
 .pagination-list {
     display: flex;
     flex-wrap: wrap;
-  
     width: 300px;
     padding: 0;
     margin: 0 0 60px 0;
@@ -1468,7 +1473,6 @@ a {
 
 .pagination-item a {
     display: inline-block;
-
     margin: 0;
     padding: 10px 15px 10px 15px;
 
@@ -1507,6 +1511,7 @@ a {
 .description {
     margin: 0;
     padding: 0 0 68px 0;
+
     background-color: #f4f7f9;
 }
 
@@ -1531,6 +1536,59 @@ a {
 
 /* ===== == MODAL WINDOW == ==== */
 
+.modal {
+    position: fixed;
+    z-index: 300;
+
+    width: 620px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+    border-top: 7px solid #ee3643;
+}
+
+.modal-login {
+    bottom: 200px;
+    left: 50%;
+  
+    width: 620px;
+    margin-left: -290px;
+}
+
+.login-form {
+    width: 460px;
+}
+
+.modal .modal-close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+
+    width: 21px;
+    height: 21px;
+
+    font-size: 0;
+
+    background-image: url("../img/icon-close.svg");
+    border: 0;
+
+    cursor: pointer;
+}
+
+.user-block-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 46px 0 0 80px;
+    width: 460px;
+}
+  
+.half-width label {
+    display: block;
+  
+    width: 220px;
+    margin: 0 0 13px 0;
+}
+
 .login-form label {
     font-size: 18px;
     line-height: 18px;
@@ -1538,12 +1596,29 @@ a {
 
 .login-form input,
 .login-form textarea {
+    padding: 12px 0 12px 16px;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
 
     border: 2px solid #dee3e4;
+    border-radius: 3px;
+}
+
+.user-block-form input {
+    width: 220px;
+}
+
+.login-form .message {
+    margin: 0 0 0 80px;
+}
+
+.login-form textarea {
+    width: 460px;
+    margin: 13px 0 0 80px;
+    padding: 13px 0 88px 16px;
 }
 
 .login-form input:hover,
@@ -1556,16 +1631,57 @@ a {
     border: 2px solid #ee3643;
 }
 
+.button-area {
+    width: 620px;
+    margin: 35px 0 0 0;
+    padding: 37px 0 37px 80px;
+    
+    background: #f4f4f4;
+}
+
 .login-form .btn {
+    padding: 14px 198px;
+
     font-size: 14px;
     line-height: 18px;
+    border: 0;
 }
 
 /* ===== == MODAL CATALOG == ==== */
 
 .modal-cocntent {
+    margin: 65px 0 65px 178px;
+
     font-size: 30px;
     line-height: 30px;
+}
+
+.modal-cocntent::before {
+    position: absolute;
+    content: " ";
+    top: 55px;
+    left: 81px;
+
+    width: 66px;
+    height: 66px;
+
+    background-image: url("../img/icon-mark.svg");
+}
+
+.button-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 39px 80px 37px 80px;
+
+    background-color: #f4f4f4;
+}
+
+.button-block .btn,
+.continue-button {
+    width: 220px;
+    padding: 12px 0;
+    text-align: center;
 }
 
 .continue-button {
@@ -1573,5 +1689,15 @@ a {
     line-height: 18px;
     color: #000000;
 
+    background-color: #ffffff;
+}
+
+.continue-button:hover  {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.continue-button:active {
+    border: 1px solid #ee3643;
     background-color: #ffffff;
 }

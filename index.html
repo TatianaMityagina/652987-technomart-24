@@ -40,10 +40,6 @@
         <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
         <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
       </symbol>
-
-      <symbol id="icon-close" enable-background="new 0 0 21 21" viewBox="0 0 21 21">
-          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
-      </symbol>
     </svg>
 
     <header class="main-header">
@@ -200,7 +196,7 @@
         </div>
       </section>
 
-      <section class="brands">
+      <section class="brands container">
         <div class="header-products">
           <h2>Популярные производители:</h2>
           <a class="btn" href="#">Все популярные товары</a>
@@ -382,28 +378,27 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal-login">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="user-block">
-          <p>
+        <div class="user-block-form">
+          <p class="half-width">
             <label for="name">Ваше имя:</label>
             <input name="your-name" id="name" type="text" placeholder="Имя Фамилия" required> 
           </p>
-          <p>
+          <p class="half-width">
             <label for="email">Ваш e-mail:</label>
             <input name="email" id="email" type="email" placeholder="email@example.com" required>
           </p>
         </div>
-        <label for="message">Текст письма:</label> 
+        <label class="message" for="message">Текст письма:</label> 
     	  <textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
-        <button class="btn" type="submit">Отправить</button>
+        <div class="button-area">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
-        <svg class="icon" width="21" height="21">
-          <use xlink:href="#icon-close"/>
-        </svg>
       </button>
     </section>
 
