@@ -1557,7 +1557,7 @@ a {
 }
 
 .form-btn:hover  {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #bdc6ca;
     background-color: #ffffff;
 }
 
@@ -1730,7 +1730,7 @@ a {
 }
 
 .pagination-list li:hover  {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #bdc6ca;
 }
 
 .pagination-list li:active {
@@ -1988,7 +1988,7 @@ a {
 }
 
 .continue-button:hover  {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #bdc6ca;
     background-color: #ffffff;
 }
 
