@@ -117,13 +117,17 @@ a {
     border: none;
 }
 
+.search input::placeholder {
+    color: #ffffff;
+}
+
 .search input[type="search"] {
     width: 100%;
-    padding: 12px 0 12px 49px;
+    padding: 12px 10px 12px 49px;
 
     font-size: 17px;
     line-height: 18px;
-    color: #ffffff;
+    color: #000000;
 
     background-color: #293449;
     border: none;
@@ -154,7 +158,6 @@ a {
     opacity: 0.3;
 }
 
-.search-icon:hover .icon,
 .bookmark-icon:hover .icon,
 .basket-icon:hover .icon,
 .basket-icon-full:hover .icon {
@@ -165,6 +168,10 @@ a {
 .bookmark-icon:hover,
 .basket-icon:hover  {
     background-color: #212a3a; 
+}
+
+.search-input-field:hover  +  .search-icon .icon {
+    opacity: 1;
 }
 
 .bookmark-icon:active,
@@ -179,8 +186,13 @@ a {
     border: none;
 }
 
-.search:focus .icon {
+.search-input-field:focus::placeholder {
+ color: #000000;
+}
+
+.search-input-field:focus  +  .search-icon .icon {
     fill: #ee3643;
+    opacity: 1;
 }
 
 .search-icon:active .icon,
@@ -1004,7 +1016,7 @@ a {
 
     width: 620px;
     height: 266px;
-    margin: 0 20px 0 0;
+    margin: 20px 20px 0 0;
     padding: 0;
 }
 
@@ -1374,9 +1386,13 @@ a {
     left: 160px;
 }
 
-.price-controls label {
-    width: 50%;
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.price-controls label {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -1857,6 +1873,59 @@ a {
     border: 0;
 }
 
+/* ===== == MODAL MAP == ==== */
+
+.modal-window {
+    position: fixed;
+    z-index: 300;
+
+    display: none;
+
+    box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+}
+
+.modal-map {
+    bottom: 250px;
+    left: 50%;
+  
+    width: 940px;
+    height: 446px;
+    margin: 0 0 0 -470px;
+    padding: 0;
+}
+
+.modal-map img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    width: 100%;
+    height: 447px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-map iframe {
+    width: 100%;
+}
+
+.modal-window .modal-close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+
+    width: 21px;
+    height: 21px;
+
+    font-size: 0;
+
+    background-image: url("../img/icon-close.svg");
+    border: 0;
+
+    cursor: pointer;
+}
+
 /* ===== == MODAL CATALOG == ==== */
 
 .modal-cocntent {
@@ -1914,3 +1983,5 @@ a {
     border: 1px solid #ee3643;
     background-color: #ffffff;
 }
+
+
