@@ -243,8 +243,21 @@ a {
 }
 
 .middle-header-contacts {
+    position: relative;
     width: 300px;
     padding-top: 60px;
+}
+
+.middle-header-contacts::after {
+    position: absolute;
+    content: " ";
+    top: 60px;
+    left: 15px;
+
+    width: 19px;
+    height: 19px;
+
+    background: url("../img/icon-phone.svg")
 }
 
 .contacts-phone {
@@ -1215,11 +1228,11 @@ a {
     opacity: 0.3;
 }
 
-.account-link {
+.account {
     position: relative;
 }
 
-.account-link::before {
+.account::before {
     position: absolute;
     content: " ";
     top: 8px;
