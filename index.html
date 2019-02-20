@@ -114,7 +114,7 @@
         <div class="instruments category">
           <h3 class="cards">Инструмент</h3>
           <a class="cards-link" href="#">На все случаи</a>
-          </div>
+        </div>
         <div class="equipment category">
           <h3 class="cards">Техника</h3>
           <a class="cards-link" href="#">Для стройки</a>
@@ -127,6 +127,8 @@
             <label class="slider-controls-item slider-controls-item-1" for="product-1">Первый</label>
             <label class="slider-controls-item slider-controls-item-2" for="product-2">Второй</label>
           </div>
+          <label class="arrow-left" for="product-1"></label>
+          <label class="arrow-right" for="product-2"></label>
           <ul class="slider-list">
             <li class="slider-item">
               <h3>Дрели</h3>
@@ -159,45 +161,45 @@
         </div>
         <div class="catalog-items">
            <article class="catalog-item">
-            <h3 class="title">Перфоратор BOSCH BFG 9000</h3>
+             <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
             <div class="image"><img width="218" height="170" src="img/item-perforator-9000.jpg"></div>
+            <h3 class="title">Перфоратор BOSCH BFG 9000</h3>
             <div class="discount">32 500 Р.</div>
             <div class="price">25 500 Р.</div>
+          </article>
+          <article class="catalog-item">
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-          </article>
-          <article class="catalog-item">
-            <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
             <div class="image"><img width="218" height="170" src="img/item-perforator-3000.jpg"></div>
+            <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
             <div class="discount">22 500 Р.</div>
             <div class="price">15 500 Р.</div>
+          </article>
+          <article class="catalog-item">
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-          </article>
-          <article class="catalog-item">
-            <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
             <div class="image"><img width="218" height="170" src="img/item-perforator-6000.jpg"></div>
+            <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
             <div class="discount">30 500 Р.</div>
             <div class="price">22 500 Р.</div>
-            <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
-            </div>
           </article>
           <article class="catalog-item">
-            <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
-            <div class="image"><img width="218" height="170" src="img/item-perforator-2000.jpg"></div>
-            <div class="discount"></div>
-            <div class="price">12 500 Р.</div>
             <div class="flag flag-new">новинка</div>
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div> 
+            <div class="image"><img width="218" height="170" src="img/item-perforator-2000.jpg"></div>
+            <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
+            <div class="discount"></div>
+            <div class="price">12 500 Р.</div>
           </article>
         </div>
       </section>
@@ -243,11 +245,14 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
           <div class="service-slider">
-            <ul class="service-control">
-              <li>Доставка</li> 
-              <li>Гарантия</li>
-              <li>Кредит</li>
-            </ul>
+            <input class="visually-hidden service-slider-btn-1" type="radio" id="button-1" name="service-toggle" checked>
+            <input class="visually-hidden service-slider-btn-2" type="radio" id="button-2" name="service-toggle">
+            <input class="visually-hidden service-slider-btn-3" type="radio" id="button-3" name="service-toggle">
+            <div class="service-control">
+              <label class="control-1" for="button-1">Доставка</label>
+              <label class="control-2" for="button-2">Гарантия</label>
+              <label class="control-3" for="button-3">Кредит</label>
+            </div>
             <div class="service-slider-content">
               <div class="service-slide slide-delivery">
                 <h3>Доставка</h3>
