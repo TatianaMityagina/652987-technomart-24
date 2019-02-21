@@ -587,7 +587,10 @@ a {
     opacity: 0;
 }
 
-.catalog-item:hover .actions,
+.catalog-item:hover .actions {
+    opacity: 1;
+}
+
 .catalog-item:focus-within .actions {
     opacity: 1;
 }
@@ -678,6 +681,8 @@ a {
 }
 
 .buy {
+    position: relative;
+
     display: block;
     width: 129px;
     margin:0 auto;
@@ -691,6 +696,19 @@ a {
     background-color: #63a63e;
     box-shadow: inset 0px -3px 0 0 #367315;
     border-radius:3px;
+}
+
+.buy::before {
+    position: absolute;
+    content: " ";
+    top: 11px;
+    left: 14px;
+
+    width: 15px;
+    height: 15px;
+
+    background: url("../img/cart-icon.svg") no-repeat;
+    opacity: 0.3;
 }
 
 .buy:hover  {
