@@ -1934,11 +1934,11 @@ a {
     flex-wrap: wrap;
     width: 300px;
     padding: 0;
-    margin: 0 0 60px 0;
+    margin: 22px 0 60px 0;
 }
 
 .pagination-item {
-    margin: 10px 9px 0 0;
+    margin: 10px 8px 0 0;
 
     border: 1px solid #e5e5e5;
     border-radius: 3px;
@@ -1956,17 +1956,17 @@ a {
     color: #000000;
 }
 
-.next {
+.next a {
     display: inline-block;
-    margin: 10px 0 0 0;
-    padding: 0px 15px;
+    margin: 0;
+    padding: 10px 32px 10px 32px;
 }
 
-.pagination-list li:hover  {
+.pagination-list a:hover  {
     border: 1px solid #bdc6ca;
 }
 
-.pagination-list li:active {
+.pagination-list a:active {
     border: 1px solid #ee3643;
 }
 
