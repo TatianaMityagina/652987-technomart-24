@@ -691,6 +691,8 @@ a {
 
     font-size: 14px;
     line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #ffffff;
 
     background-color: #63a63e;
@@ -735,6 +737,8 @@ a {
 
     font-size: 14px;
     line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #32425c;
 
     border: 3px solid #63a63e;
