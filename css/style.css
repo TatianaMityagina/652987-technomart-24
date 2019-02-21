@@ -629,7 +629,6 @@ a {
 }
 
 .title {
-    display: inline-block;
     min-height:40px;
     margin: 8px 0 10px 0;
     padding:0 25px;    
@@ -638,6 +637,10 @@ a {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
+    color: #000000;
+}
+
+.title a {
     color: #000000;
 }
 
