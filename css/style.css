@@ -653,7 +653,7 @@ a {
 
 .discount {
     min-height: 20px;
-    margin: auto 0 0 0;
+    margin: auto 0 10px 0;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
@@ -666,9 +666,9 @@ a {
 .price {
     width: 141px;
     height: 38px;
-    margin:10px auto;
-    margin-bottom:20px;
-    padding:10px 30px;
+    margin: auto auto 20px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
@@ -709,7 +709,7 @@ a {
     width: 15px;
     height: 15px;
 
-    background: url("../img/cart-icon.svg") no-repeat;
+    background: url("../img/icon-cart.svg") no-repeat;
     opacity: 0.3;
 }
 
@@ -718,14 +718,16 @@ a {
     background-color: #5fbb2d;
 }
 
-.buy:active .icon {
-    fill: #ffffff;
-
+.buy:hover::before {
     opacity: 1;
 }
 
 .buy:active {
     background-color: #518534;
+}
+
+.buy:active::before {
+    opacity: 1;
 }
 
 .bookmark {
