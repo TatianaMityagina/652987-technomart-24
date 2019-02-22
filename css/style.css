@@ -1941,16 +1941,12 @@ a {
 .pagination-list {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
     padding: 0;
-    margin: 22px 0 60px 0;
+    margin: 32px 0 60px 0;
 }
 
 .pagination-item {
-    margin: 10px 8px 0 0;
-
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
+    margin: 0 8px 0 0;
 }
 
 .pagination-item a {
@@ -1963,6 +1959,9 @@ a {
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
 }
 
 .next a {
