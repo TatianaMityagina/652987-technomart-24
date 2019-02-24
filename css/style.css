@@ -228,40 +228,32 @@ a {
 .middle-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 26px;
+    padding: 46px 0 38px 0;
 }
 
 .middle-header-title {
     width: 300px;
     margin: 0;
-    padding: 49px 0 0 50px;
+    padding: 3px 74px 0 50px;
 
     font-style: italic;
+    font-weight: 400;
     font-size: 16px;
     line-height: 23px;
     color: #ee3643;
 }
 
-.middle-header-contacts {
-    position: relative;
+.middle-header-contacts { 
     width: 300px;
-    padding-top: 60px;
-}
-
-.middle-header-contacts::after {
-    position: absolute;
-    content: " ";
-    top: 60px;
-    left: 15px;
-
-    width: 19px;
-    height: 19px;
-
-    background: url("../img/icon-phone.svg")
+    padding: 0 30px 0 0;
 }
 
 .contacts-phone {
-    padding: 8px 50px 8px 70px;
+    position: relative;
+
+    display: block;
+    margin: 0 0 8px 0;
+    padding: 8px 0 8px 72px;
 
     font-size: 21px;
     line-height: 21px;
@@ -270,7 +262,20 @@ a {
     border: 3px solid #ffffff;
 }
 
+.contacts-phone::after {
+    position: absolute;
+    content: " ";
+    top: 10px;
+    left: 12px;
+
+    width: 19px;
+    height: 19px;
+
+    background: url("../img/icon-phone.svg")
+}
+
 .contacts-adress {
+    margin: 0;
     padding-left: 8px;
 
     font-size: 14px;
@@ -283,7 +288,7 @@ a {
     justify-content: space-between;
     width: 300px;
     margin: 0;
-    padding: 47px 0 0 17px;
+    padding: 0 0 0 17px;
 
     list-style: none;
 }
@@ -540,13 +545,13 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 0 0 20px 0;
-    padding: 0;
+    padding: 25px 25px 25px 30px;
 
     background-color: #f9f5f0;
 }
 
 .header-products h2 {
-    padding: 30px 0 0 28px;
+    padding: 6px 0 0 0;
     margin: 0;
 
     font-size: 30px;
@@ -554,10 +559,6 @@ a {
     line-height: 30px;
     color: #32425c;
     text-transform: uppercase;
-}
-
-.header-products .btn {
-    margin: 26px 24px 26px 28px;
 }
 
 .catalog-items {
@@ -663,10 +664,11 @@ a {
 }
 
 .price {
+    white-space: nowrap;
     width: 141px;
     height: 38px;
     margin: auto auto 20px auto;
-    padding: 10px 30px;
+    padding: 10px 20px;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
@@ -764,7 +766,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 65px 0;
+    margin: 0 0 68px 0;
+    padding: 0;
 }
 
 
@@ -957,6 +960,7 @@ a {
 .about-company {
     display: flex;
     justify-content: space-between;
+    padding: 82px 0 86px 0;
 }
 
 .about {
@@ -973,8 +977,8 @@ a {
 
 .about h2,
 .company-contacts h2 {
-    padding: 82px 0 25px 0;
-    margin: 0;
+    padding: 0;
+    margin: 0 0 25px 0;
 
     font-size: 30px;
     line-height: 30px;
@@ -984,25 +988,15 @@ a {
 
 .about p,
 .company-contacts p {
-    margin: 0 0 25px 0;
+    margin: 0 0 24px 0;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
-.about p:nth-child(3) {
-    width: 390px;
-    margin: 0;
-}
-
-.company-contacts p {
-    width: 180px;
-    margin: 0;
-}
-
 .transport-company {
-    margin: 0;
+    margin: 0 0 15px 0;
     padding: 0;
 
     list-style: none;
@@ -1011,7 +1005,8 @@ a {
 .transport-company li {
     position: relative;
 
-    margin: 20px 0 20px 35px;
+    margin: 0 0 20px 35px;
+    padding: 0;
 
     font-size: 18px;
     line-height: 20px;
@@ -1029,8 +1024,13 @@ a {
     background-color:#ee3643;
 }
 
+.company-contacts p {
+    width: 180px;
+    margin: 0 0 34px 0;
+}
+
 .map {
-    margin: 32px 0 36px 0;
+    margin: 0 0 36px 0;
     max-width: 100%;
     height: auto;
     border: none;
@@ -1038,7 +1038,7 @@ a {
 
 .about .btn {
     display: inline-block;
-    margin: 17px 300px 86px 0;
+    margin: 0 300px 0 0;
     padding: 10px 0 10px 0;
 }
 
@@ -1424,7 +1424,7 @@ a {
     display: flex;
     width: 300px;
     margin: 0 0 10px 0;
-    padding: 48px 0 0 0;
+    padding: 0;
 }
 
 .user-container .user-link {
@@ -1436,6 +1436,7 @@ a {
     display: flex;
     justify-content: space-around;
     width: 240px;
+    margin: 0;
     padding: 12px 0 8px 4px;
 }
 
@@ -1980,27 +1981,26 @@ a {
     border: 1px solid #ee3643;
 }
 
-.pagination-list .active {
-    background-color: #ee3643;
-}
-
 .pagination-list .active a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #ffffff;
+
+    background-color: #ee3643;
+    border: transparent;
 }
 
 .description {
     margin: 0;
-    padding: 0 0 68px 0;
+    padding: 65px 0 68px 0;
 
     background-color: #f4f7f9;
 }
 
 .description h2 {
     margin: 0 0 25px 0;
-    padding: 67px 0 0 0;
+    padding: 0;
      
     font-size: 30px;
     line-height: 30px;
