@@ -1,3 +1,41 @@
+/*var buyLink = document.querySelectorAll(".js-buy");
+
+var basketPopup = document.querySelector(".modal-basket");
+var basketClose = basketPopup.querySelector(".modal-close"); 
+var basketOder = basketPopup.querySelector(".oder-button");
+var basketContinue = basketPopup.querySelector(".continue-button");
+
+for (var i=0; i<buyLink.length; i++) {
+  buyLink[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.add("modal-show-basket");
+  });
+}
+
+basketClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  basketPopup.classList.remove("modal-show-basket");
+});
+
+basketOder.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  basketPopup.classList.remove("modal-show-basket");
+});
+
+basketContinue.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  basketPopup.classList.remove("modal-show-basket");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (basketPopup.classList.contains("modal-show-basket")) {
+      basketPopup.classList.remove("modal-show-basket");
+    }
+  }
+});*/
+
+
 var contactlink = document.querySelector(".js-write");
 
 var popup = document.querySelector(".modal-login");
@@ -59,34 +97,6 @@ window.addEventListener("keydown", function (evt) {
 
 
 
-var buyLink = document.querySelector(".js-buy");
-
-var basketPopup = document.querySelector(".modal-basket");
-var basketClose = basketPopup.querySelector(".modal-close");   
-
-buyLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  buyPopup.classList.add("modal-show"); 
-});      
-
-basketClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.remove("modal-show");
-});    
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (basketPopup.classList.contains("modal-show")) {
-      basketPopup.classList.remove("modal-show");
-    }
-  }
-});
-
-
-
-
-
 var mapLink = document.querySelector(".js-map");
 
 var mapPopup = document.querySelector(".modal-map");
@@ -94,22 +104,24 @@ var mapClose = mapPopup.querySelector(".modal-close");
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mapPopup.classList.add("modal-show");
+  mapPopup.classList.add("modal-show-map");
 });
 
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mapPopup.classList.remove("modal-show");
+  mapPopup.classList.remove("modal-show-map");
 });
 
 window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-show")) {
-      mapPopup.classList.remove("modal-show");
+    if (mapPopup.classList.contains("modal-show-map")) {
+      mapPopup.classList.remove("modal-show-map")
     }
   }
 });
+
+
+
 
 
 
