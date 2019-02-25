@@ -1,10 +1,10 @@
-/var buyLink = document.querySelectorAll(".js-buy");
+var buyLink = document.querySelectorAll(".js-buy");
 
 var basketPopup = document.querySelector(".modal-basket");
 
-if (buyLink && basketPopup) {
+if (buyLink.length && basketPopup) {
   var basketClose = basketPopup.querySelector(".modal-close"); 
-  var basketOder = basketPopup.querySelector(".oder-button");
+  var basketOrder = basketPopup.querySelector(".order-button");
   var basketContinue = basketPopup.querySelector(".continue-button");
 
   for (var i=0; i<buyLink.length; i++) {
@@ -19,7 +19,7 @@ if (buyLink && basketPopup) {
     basketPopup.classList.remove("modal-show-basket");
   });
   
-  basketOder.addEventListener("click", function (evt) {
+  basketOrder.addEventListener("click", function (evt) {
     evt.preventDefault();
     basketPopup.classList.remove("modal-show-basket");
   });
