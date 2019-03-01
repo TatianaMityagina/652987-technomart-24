@@ -77,7 +77,6 @@ if (contactlink && popup) {
   });
 
   form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
     if (!login.value || !email.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
@@ -86,6 +85,7 @@ if (contactlink && popup) {
     } else {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value);
+        localStorage.setItem("email", email.value);
       } 
     }
   });     
@@ -93,7 +93,6 @@ if (contactlink && popup) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
